@@ -1,0 +1,61 @@
+@import './../../variables.scss';
+
+.balance{
+    width: 80%;
+    margin: 1rem auto;
+
+    .table{
+        width: 100%;
+        margin: 1rem auto;
+
+        table{
+            width: 100%;
+            text-align: right;
+            border-collapse: collapse;
+
+            background-color: white;
+            border-radius: .8rem;
+            box-shadow: 1px 1px 3px lightgray;
+
+        }
+        tr{
+            border-bottom: .5px solid lightgray;
+            height: 2rem;
+ 
+            
+            &:not(:first-child):hover {
+                background-color: $actionSecondary;
+              }
+            &:last-child{
+                border: none;
+            }
+        }
+        th{
+            color: $secondaryColor;
+            padding: 2rem 1rem 0rem 1rem;
+            font-size: 1.3rem;
+            border-bottom: .2px solid black;
+            &.action{
+                text-align: center;
+            }
+
+        }
+        td{
+            padding: 2rem .3rem 0rem .3rem;
+            &.action{
+                text-align: center;
+            }
+            &.pos{
+                color: green;
+
+            }
+            &.neg{
+                color: red;
+            }
+
+            svg{
+                cursor: pointer; 
+            }
+        }
+    }
+}

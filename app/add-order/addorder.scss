@@ -1,0 +1,39 @@
+@import './../variables.scss';
+
+.add-order{
+    width: 60%;
+    margin: 1rem auto;
+
+    .form{
+        width: 40%;
+        @media (max-width: 800px) {
+            width: 90%;
+            
+        }
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+        font-size: 1rem;
+        select{
+            width: 100%;
+            padding: .3rem;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+            label{
+                width: fit-content;
+                color: $secondaryColor;
+                margin-top: .5rem;
+            }
+            input{
+                width: 100%;
+                padding: .3rem;
+                
+            }
+        
+        
+    }
+}

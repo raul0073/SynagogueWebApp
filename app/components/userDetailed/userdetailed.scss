@@ -1,0 +1,105 @@
+@import './../../variables.scss';
+
+.user {
+  width: 40%;
+  margin: 1rem auto;
+
+  .info{
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    box-shadow: 0px 0px 2px lightgrey;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .right{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: .5rem;
+        figcaption{
+            text-decoration: underline;
+            width: 100%;
+        }
+        p{
+            margin: .5rem 0;
+            color: black;
+            font-size: 1.2rem;
+            width: 100%;
+            &.pos{
+                color: green;
+            }
+            &.neg{
+                color: red;
+            }
+        }
+        h2{
+            color: $actionColor;
+            font-weight: 800;
+            font-size: 2rem;
+            width: 100%;
+        }
+      
+
+}
+.left{
+    position: relative;
+    padding: .5rem;
+    text-align: right;
+    width: 40%;
+
+    .close{
+        background-color: rgb(255, 89, 0);
+    }
+    figcaption{
+        text-decoration: underline;
+        width: 100%;
+        margin-top: 0;
+    }
+    p{
+        margin: .5rem 0;
+        color: black;
+        font-size: 1.2rem;
+        width: 100%;
+        &.pos{
+            color: green;
+        }
+        &.neg{
+            color: red;
+        }    
+    }
+    .order-box{
+        border-radius: .3rem;
+        background-color: rgb(244, 244, 244);
+        margin: .5rem 0;
+        padding: .5rem 1rem;
+        height: fit-content;
+        box-shadow: 0px 0px 2px rgb(106, 106, 106);
+        &:nth-child(odd){
+            background-color:  rgb(191, 191, 191);
+        }
+        h3{
+            margin-top: .2rem;
+            color: $actionColor;
+            font-size: 1.1rem;
+        }
+    }
+}
+}
+}
+@media (max-width: 800px) {
+
+    .user{
+        width: 90%;
+    }
+    .info{
+        flex-direction: column;
+    }
+
+    
+    
+}

@@ -1,0 +1,64 @@
+@import './../../variables.scss';
+
+.navbar{
+    width: 100%;
+    background-color: #ffffff;
+    height:fit-content;
+    box-shadow: 2px 2px 5px white;
+
+
+
+    .container{
+        flex-direction: column;
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+        ul{
+            margin:0;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            justify-content: space-evenly;
+            font-size: 1.3rem;
+            background-color: $actionColor;
+            border-radius: .5rem;
+            padding: 1rem;
+            @media (max-width: 600px) {
+                border-radius: 0;
+            }
+
+            li{
+                cursor: pointer;
+                &:hover{
+                    a{
+                        color: gold;
+                    }
+                }
+                a{
+                    align-items: center;
+                    justify-content: center;
+                    width: fit-content;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .logo{
+        mix-blend-mode: multiply;
+        margin-top: 1rem;
+
+
+    }
+    p{
+        text-align: center;
+        margin: .5rem;
+    }
+}

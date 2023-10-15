@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+*,*::after,*::before{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+}
+body,html{
+    overflow-x: hidden;
+    min-height: 100vh;
+    color: #8f8f8f;
+    direction: rtl;
+    font-family: 'calibri' ;
+}
+
+.main{
+    min-height: 100vh;
+    margin: 1rem auto;
+    width: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1,h2,h3{
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $headerColor;
+
+}
+h1{
+    font-weight: 800;
+    font-size: 2rem;
+    color: $headerColor;
+}
+h3{
+    font-weight: 400;
+    font-size: 1rem;
+    color: $secondaryColor;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: $actionColor;
+    font-weight: 600;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: scale .2s ease;
+    width: 100%;
+    text-align: center;
+    &:hover{
+        color: $actionSecondary;
+    }
+}
